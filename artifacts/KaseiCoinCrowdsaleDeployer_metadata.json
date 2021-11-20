@@ -8,35 +8,7 @@
 			{
 				"constant": true,
 				"inputs": [],
-				"name": "rate",
-				"outputs": [
-					{
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": true,
-				"inputs": [],
-				"name": "weiRaised",
-				"outputs": [
-					{
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"payable": false,
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"constant": true,
-				"inputs": [],
-				"name": "wallet",
+				"name": "kasei_crowdsale_address",
 				"outputs": [
 					{
 						"name": "",
@@ -48,23 +20,9 @@
 				"type": "function"
 			},
 			{
-				"constant": false,
-				"inputs": [
-					{
-						"name": "beneficiary",
-						"type": "address"
-					}
-				],
-				"name": "buyTokens",
-				"outputs": [],
-				"payable": true,
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
 				"constant": true,
 				"inputs": [],
-				"name": "token",
+				"name": "kasei_token_address",
 				"outputs": [
 					{
 						"name": "",
@@ -78,76 +36,25 @@
 			{
 				"inputs": [
 					{
-						"name": "rate",
-						"type": "uint256"
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "symbol",
+						"type": "string"
 					},
 					{
 						"name": "wallet",
-						"type": "address"
-					},
-					{
-						"name": "token",
 						"type": "address"
 					}
 				],
 				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "constructor"
-			},
-			{
-				"payable": true,
-				"stateMutability": "payable",
-				"type": "fallback"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"name": "purchaser",
-						"type": "address"
-					},
-					{
-						"indexed": true,
-						"name": "beneficiary",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"name": "value",
-						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "TokensPurchased",
-				"type": "event"
 			}
 		],
 		"devdoc": {
-			"methods": {
-				"buyTokens(address)": {
-					"details": "low level token purchase ***DO NOT OVERRIDE*** This function has a non-reentrancy guard, so it shouldn't be called by another `nonReentrant` function.",
-					"params": {
-						"beneficiary": "Recipient of the token purchase"
-					}
-				},
-				"rate()": {
-					"return": "the number of token units a buyer gets per wei."
-				},
-				"token()": {
-					"return": "the token being sold."
-				},
-				"wallet()": {
-					"return": "the address where funds are collected."
-				},
-				"weiRaised()": {
-					"return": "the amount of wei raised."
-				}
-			}
+			"methods": {}
 		},
 		"userdoc": {
 			"methods": {}
@@ -155,7 +62,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"KaseiCoinCrowdsale.sol": "KaseiCoinCrowdsale"
+			"KaseiCoinCrowdsale.sol": "KaseiCoinCrowdsaleDeployer"
 		},
 		"evmVersion": "petersburg",
 		"libraries": {},
