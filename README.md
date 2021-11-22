@@ -29,6 +29,10 @@ Three solidity contracts: one for creating an ERC-20 token (KASEI), one for crea
 
 ![demo](EvaluationEvidence/demo.gif)
 
+### Optional - Extend the Crowdsale using OpenZepplin libraries for Capped, Timed, and Refundable
+
+![optional-compile-KaseiCoinCrowdsaleDeployer-capped-timed-refundable](EvaluationEvidence/optional-compile-KaseiCoinCrowdsaleDeployer-capped-timed-refundable.png)
+
 ---
 
 ## Contributors
